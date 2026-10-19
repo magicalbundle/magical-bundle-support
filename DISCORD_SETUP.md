@@ -1,4 +1,4 @@
-# Discord setup for Magical Clipper support
+# Discord setup for Magical Bundle support
 
 ## Recommended server structure
 
@@ -21,6 +21,24 @@
 - `bug-reports` as a **Forum channel**
 - `#license-help` visible only to the member and support team when possible
 
+### MAGICAL CLIPPER
+
+- `#clipper-help`
+- `#clipper-known-issues`
+- `#clipper-ideas`
+
+### MAGICAL SFX
+
+- `#sfx-help`
+- `#sfx-known-issues`
+- `#sfx-ideas`
+
+### MAGICAL SOUNDBOARD
+
+- `#soundboard-help`
+- `#soundboard-known-issues`
+- `#soundboard-ideas`
+
 ### PRIVATE TEAM
 
 - `#triage`
@@ -35,8 +53,7 @@
 - Pro Customer
 - Free User
 
-Do not use a role as proof of purchase. Lemon Squeezy remains the authority for
-license status.
+Do not use a role as proof of purchase. Lemon Squeezy remains the authority for license status.
 
 ## Forum tags
 
@@ -47,8 +64,10 @@ license status.
 - In progress
 - Fixed for next build
 - Closed
-- Free
-- Pro
+- Clipper Free
+- Clipper Pro
+- Magical SFX
+- Soundboard Free
 - License
 
 ## Pinned reporting rules
@@ -63,7 +82,4 @@ license status.
 
 ## Automation boundary
 
-The Discord-to-GitHub bridge may create and update support tickets. It must not
-modify plugin source code, publish releases, deactivate licenses, or expose
-private Discord messages. Product changes require explicit owner approval.
-
+The Discord-to-GitHub bridge may create and update support tickets. It must not modify plugin source code, publish releases, deactivate licenses, or expose private Discord messages. Product changes require explicit owner approval.
