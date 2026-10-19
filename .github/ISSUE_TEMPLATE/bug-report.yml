@@ -1,0 +1,110 @@
+name: Bug report / Reporte de error
+description: Report a reproducible problem in Magical Clipper Free or Pro.
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing Magical Clipper. Do not include license keys, email addresses, client media, or private paths.
+
+        Gracias por probar Magical Clipper. No incluyas claves de licencia, correos, material de clientes ni rutas privadas.
+
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition / Edicion
+      options:
+        - Magical Clipper Free
+        - Magical Clipper Pro
+        - Activation screen / Pantalla de activacion
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Magical Clipper version / Version
+      placeholder: Example / Ejemplo: 0.12.1
+    validations:
+      required: true
+
+  - type: input
+    id: resolve-version
+    attributes:
+      label: DaVinci Resolve Studio version
+      placeholder: Example / Ejemplo: 21.1.1
+    validations:
+      required: true
+
+  - type: input
+    id: mac-version
+    attributes:
+      label: macOS version and Mac model / Version de macOS y modelo
+      placeholder: Example / Ejemplo: macOS 26.1, MacBook Pro M2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact / Impacto
+      options:
+        - Blocker — cannot continue / No puedo continuar
+        - Major — feature cannot be used / No se puede usar la funcion
+        - Minor — workaround exists / Existe una alternativa
+        - Visual or usability issue / Problema visual o de usabilidad
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Pasos para reproducir
+      description: Number each action from opening Resolve until the problem appears.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Click...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / Resultado esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / Resultado obtenido
+    validations:
+      required: true
+
+  - type: textarea
+    id: activity-log
+    attributes:
+      label: Magical Clipper Activity Log
+      description: Paste the relevant lines after removing names, paths, emails, and license information.
+      render: text
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or recording / Capturas o grabacion
+      description: Drag files here after hiding private project and client information.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Privacy and reproduction confirmation
+      options:
+        - label: I removed license keys and private information. / Elimine claves e informacion privada.
+          required: true
+        - label: I can reproduce this problem with the steps above. / Puedo reproducir el problema con estos pasos.
+          required: true
+
