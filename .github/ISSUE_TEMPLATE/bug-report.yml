@@ -27,7 +27,7 @@ body:
     id: plugin-version
     attributes:
       label: Magical Clipper version / Version
-      placeholder: Example / Ejemplo: 0.12.1
+      placeholder: "Example / Ejemplo: 0.12.1"
     validations:
       required: true
 
@@ -35,7 +35,7 @@ body:
     id: resolve-version
     attributes:
       label: DaVinci Resolve Studio version
-      placeholder: Example / Ejemplo: 21.1.1
+      placeholder: "Example / Ejemplo: 21.1.1"
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     id: mac-version
     attributes:
       label: macOS version and Mac model / Version de macOS y modelo
-      placeholder: Example / Ejemplo: macOS 26.1, MacBook Pro M2
+      placeholder: "Example / Ejemplo: macOS 26.1, MacBook Pro M2"
     validations:
       required: true
 
@@ -52,9 +52,9 @@ body:
     attributes:
       label: Impact / Impacto
       options:
-        - Blocker — cannot continue / No puedo continuar
-        - Major — feature cannot be used / No se puede usar la funcion
-        - Minor — workaround exists / Existe una alternativa
+        - Blocker - cannot continue / No puedo continuar
+        - Major - feature cannot be used / No se puede usar la funcion
+        - Minor - workaround exists / Existe una alternativa
         - Visual or usability issue / Problema visual o de usabilidad
     validations:
       required: true
