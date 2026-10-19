@@ -1,5 +1,5 @@
 name: Bug report / Reporte de error
-description: Report a reproducible problem in Magical Clipper Free or Pro.
+description: Report a reproducible problem in a Magical Bundle plugin.
 title: "[Bug]: "
 labels:
   - bug
@@ -8,25 +8,27 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for testing Magical Clipper. Do not include license keys, email addresses, client media, or private paths.
+        Thank you for testing a Magical Bundle plugin. Do not include license keys, email addresses, client media, or private paths.
 
-        Gracias por probar Magical Clipper. No incluyas claves de licencia, correos, material de clientes ni rutas privadas.
+        Gracias por probar un plugin de Magical Bundle. No incluyas claves de licencia, correos, material de clientes ni rutas privadas.
 
   - type: dropdown
-    id: edition
+    id: product
     attributes:
-      label: Edition / Edicion
+      label: Product / Producto
       options:
         - Magical Clipper Free
         - Magical Clipper Pro
-        - Activation screen / Pantalla de activacion
+        - Magical SFX
+        - Magical Soundboard Free
+        - Licensing or activation / Licencia o activacion
     validations:
       required: true
 
   - type: input
     id: plugin-version
     attributes:
-      label: Magical Clipper version / Version
+      label: Plugin version / Version del plugin
       placeholder: "Example / Ejemplo: 0.12.1"
     validations:
       required: true
@@ -88,8 +90,8 @@ body:
   - type: textarea
     id: activity-log
     attributes:
-      label: Magical Clipper Activity Log
-      description: Paste the relevant lines after removing names, paths, emails, and license information.
+      label: Plugin Activity Log
+      description: Paste the relevant lines after removing names, paths, emails, and license information. Leave blank if the plugin has no Activity Log.
       render: text
 
   - type: textarea
@@ -107,4 +109,3 @@ body:
           required: true
         - label: I can reproduce this problem with the steps above. / Puedo reproducir el problema con estos pasos.
           required: true
-
